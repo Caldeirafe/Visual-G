@@ -3,7 +3,7 @@ Algoritmo "semnome"
 Var
 
   escala : caractere
-  temperatura : real
+  temperatura, valor : real
 
 Inicio
 
@@ -12,11 +12,15 @@ Inicio
 
       se escala = "F" entao
          escreva("Digite a temperatura em Fahrenheit: ")
-         leia(temperatura)
+         leia(valor)
+         temperatura <-(valor - 32)* 5/9
+         escreval("temperatura equivalente em Celsius: ", temperatura:4:2)
          senao
               se escala = "C" entao
                  escreva("Digite a temperatura em Celsius: ")
-                 leia(temperatura)
+                 leia(valor)
+                 temperatura <- (valor * 9/5) + 32
+                 escreval("temperatura equivalente em Fahrenheit: ", temperatura:4:2)
       fimse
            fimse
            
