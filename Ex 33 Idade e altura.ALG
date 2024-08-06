@@ -26,13 +26,16 @@ Inicio
           leia(vetid[i])
           escreva("Altura: ")
           leia(vetalt[i])
+          se vetid[i] < 16 entao
+          total <- total + 1
+          fimse
           soma <- soma + vetalt[i]
-          total <- total + vetid[i]
           fimpara
-          media <- soma/N
+
           menor <- (total*100)/N
+          media <- soma/N
           escreval("Altura média: ", media:2:2)
-          escreval("Pessoas com menos de 16 anos: ", menor, "%")
+          escreval("Pessoas com menos de 16 anos: ", menor:2:2, "%")
           
           para i de 0 ate N - 1 faca
           se vetid[i] < 16 entao
