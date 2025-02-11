@@ -22,7 +22,7 @@ Inicio
                leia(vet[i])
                soma <- soma + vet[i]
           fimpara
-                 media <- soma/N
+                 media <- soma/2
                  escreval("Valores: ")
                                    para i de 0 ate N - 1 faca
 
